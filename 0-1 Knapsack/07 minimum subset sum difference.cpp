@@ -1,4 +1,3 @@
-
 #include<bits/stdc++.h>
 using namespace std;
 vector<int> isSubsetPoss(int arr[],int sum, int n){
