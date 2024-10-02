@@ -50,3 +50,6 @@ int main(){
     canPartition(arr,n) ? cout << "true\n" : cout << "false\n";
     return 0;
 }
+
+// Time complexity : O(n*sum)  -> O(n) + O(n * sum/2) = O(n*sum)
+// space complexity : O(n*sum) -> space complexity primarilt determined by 2D table which as dimension (n+1)*(sum/2+1)
