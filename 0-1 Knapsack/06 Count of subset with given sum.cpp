@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 // bottom up approach
-int countSubsets(int arr[],int sum,int n){
+int countSubsetsWithSum(int arr[],int sum,int n){
         int t[n+1][sum+1];
         for(int i = 0; i<n+1; i++){
             for(int j = 0; j<sum+1; j++){
@@ -30,7 +30,7 @@ int main(){
         cin >> arr[i];
     }
     cin >> sum;
-    cout << countSubsets(arr,sum,n) << endl;
+    cout << countSubsetsWithSum(arr,sum,n) << endl;
     return 0;
 }
 // Time complexity : O(n*sum)
