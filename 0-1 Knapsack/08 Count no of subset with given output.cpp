@@ -24,13 +24,13 @@ int countSubsetsWithSum(int arr[],int sum,int n){
 int countSubsetsWithDiff(int arr[],int diff,int n){
     int sumOfArray = 0;
     for(int i = 0; i<n; i++){
-        sumOfArray += arr[i];
+        sumOfArray += arr[i]; //here we taking sum of array
     }
     if((sumOfArray + diff) % 2 != 0){
         return 0;
     }
     else{
-        return countSubsetsWithSum(arr,(sumOfArray + diff)/2,n);
+        return countSubsetsWithSum(arr,(sumOfArray + diff)/2,n); //here we take sum of subset 1 array
     }
 }
 int main(){
@@ -45,3 +45,6 @@ int main(){
     cout << countSubsetsWithDiff(arr,diff,n) << endl;
     return 0;
 }
+
+// Time complexity : O(n) + O(n*sum) -> O(n*sum)
+// space complexity : O(n*sum)
